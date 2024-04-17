@@ -1,0 +1,36 @@
+.pagination {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  pointer-events: none;
+  z-index: 2;
+  .previous-page-button,
+  .next-page-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    border: solid 2px white;
+    background: #000;
+    > .anticon {
+      font-size: 56px !important;
+    }
+  }
+  &.in-sharing {
+    padding-top: 10px;
+    gap: 10px;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 264px;
+    justify-content: center;
+    align-items: flex-start !important;
+    transform: none;
+    height: 100%;
+    align-items: center;
+  }
+}
